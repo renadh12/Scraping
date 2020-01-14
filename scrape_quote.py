@@ -38,12 +38,26 @@ def scrape_quote():
         remaining_guesses = 4
 
         while guess.lower() != auth.lower():
-            guess = input(f"Wrong! Please try again. Remaining Guesses: {remaining_guesses}")
+            guess = input(f"Who said this quote? Remaining Guesses: {remaining_guesses}")
             remaining_guesses -= 1
 
             if remaining_guesses == 3:
                 print("Here's a hint: ")
-                print(f"Fir")
+                res = requests.get(f"{BASE_URL}{quote['bio-link']}")
+                soup = BeautifulSoup(res.text, "html.parser")
+                birth_date = soup.find(class_="author-born-date").get_text()
+                birth_place = soup.find(class_="author-born-location").get_text()
+                print(f"The author was born on {birth_date} {birth_place}")
+
+            elif remaining_guesses ==2:
+                print("Here's a hint: ")
+                print(f"The first letter of author's first name is {auth[0]}")
+
+            elif remaining_guesses ==1:
+                last_initial = auth.split(" ")[1][0]
+                print(f"The first letter of author's last name is {last_initial}")
+
+
 
 
 scrape_quote()
