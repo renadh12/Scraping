@@ -2,7 +2,6 @@ from random import choice
 from bs4 import BeautifulSoup
 import requests
 from csv import DictReader
-import PySimpleGUI as sg
 
 # Caps variable name because it's a constant
 BASE_URL = "http://quotes.toscrape.com/"
@@ -36,13 +35,12 @@ def start_game(all_quotes):
         # Guesses decrement by 1 for each wrong guess
         remaining_guesses -= 1
         # print(quote['author'])  # Remove later
-
         # If the user gets the answer right, we are going to print CORRECT ANSWER and break
         if guess.lower() == quote['author'].lower():
             print("YES! CORRECT ANSWER!")
             break
         # Like mentioned above, user is going to be given a hint for every wrong guess
-        # First hint - author's bio info : birth date & birth place
+        # First hint - author's bio info : birth date & birth placedv
         if remaining_guesses == 3:
             print("Wrong! Here's a hint: ")
             res = requests.get(f"{BASE_URL}{quote['bio-link']}")
