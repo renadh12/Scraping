@@ -66,7 +66,7 @@ Install requests module
 ### Built With
 
 - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) - Python library for pulling data out of HTML and XML files
-- [requests](https://requests.readthedocs.io/en/master/) - Elegant and simple HTTP library for Python, built for human beings.
+- [requests](https://requests.readthedocs.io/en/master/) - Module that allows you to send HTTP requests using Python.
 
 ### Author
 *Renadh Chowdhury*
