@@ -31,7 +31,6 @@ def start_game(all_quotes):
     # the user to try again with hints
     while guess.lower() != quote['author'].lower() and remaining_guesses > 0:
         guess = input(f"Who said this quote? Remaining Guesses: {remaining_guesses} \n")
-        print(quote['author'])
         # Guesses decrement by 1 for each wrong guess
         remaining_guesses -= 1
         # print(quote['author'])  # Remove later
