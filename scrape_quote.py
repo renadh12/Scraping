@@ -11,7 +11,7 @@ def scrape_quote():
     url = "/page/1"  # There are multiple pages on this site, we start at Page 1
 
     while url:
-        # Sending a request to the web page download the HTML
+        # Sending a request to the web page to download the HTML
         res = requests.get(f"{BASE_URL}{url}")
 
         '''Grabbing and parsing the HTML data using BeautifulSoup so we can 
