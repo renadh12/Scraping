@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-from random import choice
 import requests
 from csv import DictWriter
 
