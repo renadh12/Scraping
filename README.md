@@ -8,7 +8,7 @@ This is a scraping project using Python's *BeautifulSoup, requests, csv and rand
 of a mixed bag, I'd like to give a shoutout to ScrapingHub for coming up with this website - http://quotes.toscrape.com/ designed specifically for scraping practices. This particular
 website contains 100 quotes by well-renowned people from around the globe. To sum up my Python script, each and every quote along with its author info
 is scraped from the aforementioned site and written to a CSV file. Afterwards, the script grabs a random quote from the CSV file and asks the user to guess the author
-of the quote. The user gets 4 attempts. For every failed guess, a hint is given to the user until all 4 attempts have been used up.
+of the quote. The user gets 4 attempts. For every failed guess, a hint is given until all 4 attempts have been used up.
 
 ### Getting Started
 
