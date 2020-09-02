@@ -1,6 +1,6 @@
-# Web Scraping using Python
+# Guess The Author
 
-## Scraping Quote Project
+## Web Scraping Using Python
 
 ### Project Description
 
