@@ -31,7 +31,7 @@ HTTPS
 
 #### Installation
 
-You can perform all these installation command lines on your `terminal` or your text editor terminal like I did.
+You can perform all these installation command lines on your `terminal`.
 
 Install pip 
 
