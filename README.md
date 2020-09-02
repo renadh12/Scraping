@@ -1,4 +1,4 @@
-# Scraping
+# Web Scraping using Python
 
 ## Scraping Quote Project
 
